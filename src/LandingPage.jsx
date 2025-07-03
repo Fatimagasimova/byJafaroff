@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <div className='landing-page' id='home'>
       <nav>
-        <div className='logo'>byJafaroff</div>
+        <a href="#home" className='logo'>byJafaroff</a>
         <ul className='nav-elements'>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
@@ -17,7 +17,7 @@ const LandingPage = () => {
         <div className="overlay"></div>
         <div className="hero-content">
           <h2>Build Your Digital Future</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 <a href="#about" className="learn-more-button">Learn More</a>
         </div>
       </section>
@@ -30,8 +30,9 @@ const LandingPage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestiae cumque similique dignissimos esse vitae veritatis aperiam culpa, repellat possimus? Obcaecati dignissimos molestias numquam quas tempore! Asperiores laudantium delectus tenetur?
           </p>
         </div>
-        <div>
+        <div className='sign'>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae adipisci hic vero iure illo, aliquam praesentium quibusdam accusamus doloremque officiis dignissimos odio molestiae minima neque consequuntur repellat fugit odit excepturi eius aperiam earum assumenda nisi suscipit! Obcaecati hic aspernatur, fuga reiciendis vel, ducimus, omnis facere id delectus velit ipsam. Labore.</p>
+          <img  src="https://cdn-ildceij.nitrocdn.com/DRnNUxiqxHnxDRbzoFypjebKFRSlJIyA/assets/images/optimized/rev-7f03d3e/www.wisestamp.com/wp-content/uploads/2024/04/Michael-Jordan-personal-autograph.webp" alt="sign" className='sign' />
         </div>
 
         <img src="https://img.freepik.com/free-photo/portrait-confident-young-businessman-with-his-arms-crossed_23-2148176206.jpg?semt=ais_hybrid&w=740" alt="ceo" />
@@ -72,7 +73,7 @@ const LandingPage = () => {
         <div className='contact-info'>
           <input type="text" placeholder='Enter your name:' />
           <input type="text" placeholder='Enter your email:' />
-          <textarea cols={2} rows={5} />
+          <textarea />
           <button type="submit" className='submit-button'>Submit</button>
         </div>
 

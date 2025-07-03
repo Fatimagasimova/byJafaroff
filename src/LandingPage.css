@@ -17,6 +17,8 @@ nav {
   font-weight: bold;
   font-style: italic;
   cursor: pointer;
+  text-decoration: none;
+
 
 }
 
@@ -67,7 +69,8 @@ nav {
   position: relative;
   z-index: 2;
   padding: 40px;
-  left: 200px;
+  left: 13%;
+  width: 80%;
 }
 
 .hero-content h2 {
@@ -76,39 +79,38 @@ nav {
 }
 
 .hero-content p {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 30px;
   max-width: 600px;
 }
 
 .learn-more-button {
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #ffffff;
+  border: 2px solid #2563EB;
   color: #2563EB;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 
 .learn-more-button:hover {
   background-color: #e0e7ff;
+  border: 2px solid #0d307d;
 }
-
-
 
 .about-company {
   display: flex;
-justify-content: center;
-padding: 10px;
-width: 90%;
-margin: 0 auto 40px;
-gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto 40px;
+  gap: 20px;
 }
 
- h1 {
+h1 {
   font-style: italic;
   color: #2563EB;
   font-size: 40px;
@@ -135,6 +137,13 @@ gap: 20px;
   height: 380px;
   object-fit: cover;
   width: 340px;
+}
+
+
+.sign img {
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
 }
 
 
@@ -183,13 +192,19 @@ gap: 20px;
   border: 2px solid #2563EB;
   border-radius: 4px;
   background-color: white;
+  cursor: pointer;
+}
+
+.service-button:hover {
+  border: 2px solid #1e1a90;
+  background-color: #cddaeb;
 }
 
 .contact-us {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 300px;
+  gap: 100px;
   margin: 50px auto;
 }
 
@@ -200,18 +215,23 @@ gap: 20px;
 }
 
 
-.contact-info input {
+.contact-info input,
+.contact-info textarea {
   width: 300px;
   height: 30px;
-  }
+}
 
-  .contact-us img {
-    height: 300px !important;
-  }
+.contact-info textarea {
+  height: 100px;
+}
+
+.contact-us img {
+  height: 300px !important;
+}
 
 
-  .footer {
-  background-color: #0d307d; 
+.footer {
+  background-color: #0d307d;
   color: white;
   padding: 40px 20px 20px;
   margin-top: 60px;
@@ -253,8 +273,138 @@ gap: 20px;
 .submit-button {
   background-color: white;
   border: 2px solid #2563EB;
-  height: 30px;
-  width: 70px;
+  height: 40px;
+  width: 90px;
   align-self: center;
   border-radius: 4px;
+  cursor: pointer;;
+}
+
+.submit-button:hover {
+  border: 2px solid #1e1a90;
+  background-color: #cddaeb;
+}
+
+
+@media (max-width: 600px) {
+
+  nav {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav-elements {
+    gap: 12px;
+  }
+
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 35px;
+  }
+
+
+  .about-company {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 95%;
+  }
+
+  .about-company div {
+    width: 100%;
+  }
+
+  .about-company img {
+    width: 100%;
+    height: auto;
+    max-width: 340px;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card {
+    width: 75% !important;
+  }
+
+  .contact-us {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+
+  .contact-us img {
+    display: none;
+  }
+
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .about-company {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 80%;
+  }
+
+  .about-company div {
+    width: 100%;
+  }
+
+  .about-company img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+  }
+
+  .service-cards {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 38%;
+  }
+
+  .contact-us {
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .contact-us {
+    margin: 10px;
+  }
+
+  .contact-us img {
+    display: none;
+  }
+
+
+  .sign img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 50px;
+  }
 }
